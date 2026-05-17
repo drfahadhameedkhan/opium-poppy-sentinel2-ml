@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the metadata below."
+
+title: "Geospatial Machine Learning for Opium Poppy Cultivation Monitoring in Pakistan and Afghanistan: A Sentinel-2 Multi-Temporal Analysis"
+
+authors:
+  - family-names: "Khan"
+    given-names: "Fahad Hameed"
+    affiliation: "[Institution Name], Rawalpindi, Pakistan"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+
+type: software
+version: "1.0.0"
+date-released: "2025-01-01"
+license: MIT
+
+repository-code: "https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml"
+
+journal: "Land"
+publisher: "MDPI"
+issn: "2073-445X"
+
+abstract: >
+  Complete open-source implementation of a geospatial machine learning
+  framework for detecting and mapping opium poppy cultivation zones
+  using Sentinel-2 multi-temporal imagery in Afghanistan and Pakistan.
+  Includes Random Forest, XGBoost, and CNN-LSTM classifiers achieving
+  up to 91.4% overall accuracy, with change detection and spatial
+  risk surface modelling.
+
+keywords:
+  - opium poppy
+  - remote sensing
+  - Sentinel-2
+  - machine learning
+  - CNN-LSTM
+  - land cover classification
+  - South Asia
+  - counter-narcotics
+  - change detection
+  - Google Earth Engine

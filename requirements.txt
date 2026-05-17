@@ -1,0 +1,56 @@
+# =============================================================================
+# Opium Poppy Cultivation Monitoring — Python Dependencies
+# =============================================================================
+# Geospatial Machine Learning for Opium Poppy Cultivation Monitoring
+# in Pakistan and Afghanistan: A Sentinel-2 Multi-Temporal Analysis
+#
+# Author : Fahad Hameed Khan
+# Journal: Land (MDPI), 2025
+# =============================================================================
+
+# ── Core Scientific Stack ──────────────────────────────────────────────────
+numpy>=1.23.0
+scipy>=1.9.0
+pandas>=1.5.0
+
+# ── Machine Learning ────────────────────────────────────────────────────────
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+imbalanced-learn>=0.10.0        # SMOTE oversampling
+
+# ── Deep Learning (CNN-LSTM) ────────────────────────────────────────────────
+tensorflow>=2.10.0              # GPU recommended for CNN-LSTM training
+
+# ── Geospatial Processing ───────────────────────────────────────────────────
+earthengine-api>=0.1.370        # Google Earth Engine Python API
+geopandas>=0.13.0
+rasterio>=1.3.0
+shapely>=2.0.0
+pyproj>=3.5.0
+fiona>=1.9.0
+
+# ── Remote Sensing & Image Processing ──────────────────────────────────────
+rioxarray>=0.14.0
+xarray>=2023.1.0
+opencv-python>=4.7.0
+Pillow>=9.5.0
+
+# ── Explainability ──────────────────────────────────────────────────────────
+shap>=0.42.0                    # SHAP feature importance
+
+# ── Visualisation ───────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+folium>=0.14.0                  # Interactive maps
+contextily>=1.3.0               # Basemaps
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+pyyaml>=6.0
+tqdm>=4.65.0
+joblib>=1.2.0
+loguru>=0.7.0
+
+# ── Notebook Support ────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipywidgets>=8.0.0

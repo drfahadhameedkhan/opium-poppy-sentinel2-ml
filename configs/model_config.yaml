@@ -1,0 +1,93 @@
+# =============================================================================
+# Model Configuration — Opium Poppy Sentinel-2 ML Framework
+# Fahad Hameed Khan | Land (MDPI), 2025
+# =============================================================================
+
+# ── Class definitions ──────────────────────────────────────────────────────
+classes:
+  0: "Opium Poppy"
+  1: "Wheat"
+  2: "Bare/Fallow"
+  3: "Other Vegetation"
+  4: "Built/Water"
+
+# ── Cultivation seasons ────────────────────────────────────────────────────
+seasons:
+  S1: {start: "2022-10-01", end: "2023-05-31", label: "2022-23"}
+  S2: {start: "2023-10-01", end: "2024-05-31", label: "2023-24"}
+  S3: {start: "2024-10-01", end: "2025-05-31", label: "2024-25"}
+
+# ── Preprocessing ──────────────────────────────────────────────────────────
+preprocessing:
+  cloud_threshold: 20          # Max cloud cover % per scene
+  composite_days: 14           # Bi-weekly compositing window
+  cloud_fill_method: harmonic  # Gap-fill: 'harmonic' or 'linear'
+  n_harmonics: 3               # Harmonic regression components
+  scale_factor: 0.0001         # Sentinel-2 L2A reflectance scale
+  bands: [B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12]
+
+# ── Feature engineering ────────────────────────────────────────────────────
+features:
+  vegetation_indices: [NDVI, EVI, CIre]
+  phenological_params: [amplitude, phase, greenup_rate, base_value]
+  terrain_covariates: [elevation, slope, aspect, TWI, TRI]
+  n_timesteps: 26
+  n_spectral_features: 13
+
+# ── Random Forest ──────────────────────────────────────────────────────────
+random_forest:
+  n_estimators: 500
+  max_depth: null              # Unlimited (best from grid search)
+  min_samples_leaf: 5
+  max_features: sqrt
+  random_state: 42
+  n_jobs: -1
+  class_weight: balanced
+
+# ── XGBoost ────────────────────────────────────────────────────────────────
+xgboost:
+  n_estimators: 1000
+  learning_rate: 0.05
+  max_depth: 6
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_alpha: 0.1              # L1 regularisation
+  reg_lambda: 1.0             # L2 regularisation
+  early_stopping_rounds: 50
+  eval_metric: mlogloss
+  random_state: 42
+
+# ── CNN-LSTM ────────────────────────────────────────────────────────────────
+cnn_lstm:
+  conv_filters: [64, 128]
+  kernel_size: 3
+  lstm_units: 128
+  dense_units: 64
+  dropout_conv: 0.3
+  dropout_lstm: 0.2
+  learning_rate: 0.0001
+  batch_size: 256
+  max_epochs: 100
+  patience: 20                # Early stopping patience
+  validation_split: 0.15
+
+# ── Sampling & validation ──────────────────────────────────────────────────
+sampling:
+  smote_ratio: 0.33           # Poppy:Wheat ratio after SMOTE
+  spatial_block_size_km: 50   # Spatial CV block size
+  random_state: 42
+
+# ── Risk surface model ─────────────────────────────────────────────────────
+risk_model:
+  model_type: logistic_regression
+  regularisation: elastic_net
+  l1_ratio: 0.5
+  covariates:
+    - elevation
+    - slope
+    - dist_paved_road
+    - dist_settlement
+    - ndvi_seasonality_index
+    - historical_cultivation
+  risk_tiers: [low, moderate, high, very_high]
+  risk_thresholds: [0.2, 0.4, 0.65, 0.85]
