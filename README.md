@@ -1,5 +1,5 @@
 # 🌍 Geospatial Machine Learning for Opium Poppy Cultivation Monitoring
-## A Sentinel-2 Multi-Temporal Analysis — Pakistan & Afghanistan
+## A Sentinel-2 Multi-Temporal Analysis - Pakistan & Afghanistan
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 [![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://earthengine.google.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.xxxx%2Fland.2025.xxxxx-blue?style=for-the-badge)](https://doi.org)
-[![Journal](https://img.shields.io/badge/Journal-Land%20(MDPI)-orange?style=for-the-badge)](https://www.mdpi.com/journal/land)
+[![Acceptance Awaited from Journal](https://img.shields.io/badge/Journal-Land%20(MDPI)-orange?style=for-the-badge)](https://www.mdpi.com/journal/land)
 
 [![Stars](https://img.shields.io/github/stars/fahadhameedkhan/opium-poppy-sentinel2-ml?style=social)](https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml/stargazers)
 [![Forks](https://img.shields.io/github/forks/fahadhameedkhan/opium-poppy-sentinel2-ml?style=social)](https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml/network)
@@ -53,11 +53,11 @@
 
 ## 🔬 Overview
 
-This repository contains the **complete open-source implementation** of a geospatial machine learning framework for **detecting, mapping, and monitoring illicit opium poppy cultivation** in South Asia using freely available multi-temporal **Sentinel-2** satellite imagery.
+This repository contains the **complete open-source implementation** of a geospatial machine learning framework for **detecting, mapping and monitoring illicit opium poppy cultivation** in South Asia using freely available multi-temporal **Sentinel-2** satellite imagery.
 
-The study develops and rigorously validates three supervised classification architectures — **Random Forest (RF)**, **XGBoost**, and a hybrid **Convolutional Neural Network–Long Short-Term Memory (CNN-LSTM)** — for cultivation area estimation across **680,000 km²** spanning major producer provinces in **Afghanistan and Pakistan** over three consecutive cultivation seasons (2022–2025).
+The study develops and rigorously validates three supervised classification architectures: **Random Forest (RF)**, **XGBoost** and a hybrid **Convolutional Neural Network–Long Short-Term Memory (CNN-LSTM)**, for cultivation area estimation across **680,000 km²** spanning major producer provinces in **Afghanistan and Pakistan** over three consecutive cultivation seasons (2022–2025).
 
-> **Published in:** *Land* (MDPI) — Section: Land Innovations — Data and Machine Learning | ISSN 2073-445X
+> **Manuscript submitted for acceptance to:** *Land* (MDPI)
 
 ### ✨ What Makes This Framework Different?
 
@@ -78,7 +78,7 @@ The study develops and rigorously validates three supervised classification arch
 
 ### Classification Performance
 
-| Classifier | Overall Accuracy | Kappa | PA — Poppy | UA — Poppy | F1 Score |
+| Classifier | Overall Accuracy | Kappa | PA - Poppy | UA - Poppy | F1 Score |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 🌳 **Random Forest** | 87.3 ± 2.6% | 0.83 ± 0.03 | 83.1 ± 3.1% | 81.7 ± 2.9% | 0.824 |
 | ⚡ **XGBoost** | 89.7 ± 2.1% | 0.86 ± 0.02 | 86.4 ± 2.4% | 85.2 ± 2.7% | 0.858 |
@@ -131,10 +131,10 @@ Nangarhar (AFG)  ░░░░░░░░░░                            - 6,8
 ```
 
 The study encompasses diverse agro-ecological zones:
-- 🏜️ **Irrigated lowlands** — Helmand/Kandahar river valleys (750–1,200 m)
-- 🏔️ **Highland terraces** — KPK Bara, Tirah, Dir valleys (steep slopes)
-- 🌾 **Mid-elevation rain-fed fields** — Nangarhar, Badakhshan (600–4,000 m)
-- 🌵 **Arid highland plateaux** — Northern/western Balochistan
+- 🏜️ **Irrigated lowlands** - Helmand/Kandahar river valleys (750–1,200 m)
+- 🏔️ **Highland terraces** - KPK Bara, Tirah, Dir valleys (steep slopes)
+- 🌾 **Mid-elevation rain-fed fields** - Nangarhar, Badakhshan (600–4,000 m)
+- 🌵 **Arid highland plateaux** - Northern/western Balochistan
 
 ---
 
@@ -476,7 +476,7 @@ Risk Level        Area (km²)    % of Study Area
 🟢 Low            613,000          90.2%
 ```
 
-> **All output maps (GeoTIFF format), trained model weights, and SHAP feature importance plots are available in the `/results/` directory and via the Zenodo data archive linked below.**
+> **All output maps (GeoTIFF format), trained model weights and SHAP feature importance plots are available in the `/results/` directory and via the Zenodo data archive linked below.**
 
 ---
 
@@ -484,13 +484,13 @@ Risk Level        Area (km²)    % of Study Area
 
 | Dataset | Source | Access |
 |---|---|---|
-| Sentinel-2 L2A imagery | Copernicus Open Access Hub | [scihub.copernicus.eu](https://scihub.copernicus.eu) — **Free** |
-| Google Earth Engine processing | Google / ESA | [earthengine.google.com](https://earthengine.google.com) — **Free** |
-| UNODC Opium Survey data | UNODC Data Portal | [dataunodc.un.org](https://dataunodc.un.org) — **Free** |
-| SRTM Digital Elevation Model | NASA / USGS | via GEE — **Free** |
-| Training sample labels | This study | `/data/sample/` — **Included** |
-| Trained model weights | This study | [Zenodo Archive](#) — **Free** |
-| Output cultivation maps | This study | [Zenodo Archive](#) — **Free** |
+| Sentinel-2 L2A imagery | Copernicus Open Access Hub | [scihub.copernicus.eu](https://scihub.copernicus.eu) - **Free** |
+| Google Earth Engine processing | Google / ESA | [earthengine.google.com](https://earthengine.google.com) - **Free** |
+| UNODC Opium Survey data | UNODC Data Portal | [dataunodc.un.org](https://dataunodc.un.org) - **Free** |
+| SRTM Digital Elevation Model | NASA / USGS | via GEE - **Free** |
+| Training sample labels | This study | `/data/sample/` - **Included** |
+| Trained model weights | This study | [Zenodo Archive](#) - **Free** |
+| Output cultivation maps | This study | [Zenodo Archive](#) - **Free** |
 
 ---
 
@@ -503,13 +503,13 @@ If you use this code or data in your research, please cite:
   title     = {Geospatial Machine Learning for Opium Poppy Cultivation Monitoring
                in Pakistan and Afghanistan: A Sentinel-2 Multi-Temporal Analysis},
   author    = {Khan, Fahad Hameed},
-  journal   = {Land},
-  publisher = {MDPI},
-  year      = {2025},
+  journal   = {XXXX},
+  publisher = {XXXX},
+  year      = {2026},
   volume    = {XX},
   number    = {X},
   pages     = {XXXX},
-  doi       = {10.3390/land.XXXXXXXX},
+  doi       = {10.3390/.XXXXXXXX},
   issn      = {2073-445X},
   url       = {https://www.mdpi.com/journal/land}
 }
@@ -522,13 +522,14 @@ If you use this code or data in your research, please cite:
 <div align="center">
 
 **Fahad Hameed Khan**
-*Post-Doctoral Research Fellow*
-Department of [Name], [Institution], Rawalpindi, Pakistan
+*Independant Researcher*
+ Karachi, Pakistan
 
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@institution.edu.pk)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0000--0000--0000-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org)
-[![ResearchGate](https://img.shields.io/badge/ResearchGate-Profile-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://researchgate.net)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:drfahadhameedkhan@gmail.com)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--2087--0242-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0009-2087-0242)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Profile-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Fahad-Khan-119?ev=hdr_xprf)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=fbh7R64AAAAJ&hl=en)
+
 
 </div>
 
