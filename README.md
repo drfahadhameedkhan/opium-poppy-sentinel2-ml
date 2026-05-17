@@ -171,9 +171,9 @@ UNODC trend validation     Terrain + infra covars    Open-source tools
 
 | Index | Formula | Purpose |
 |---|---|---|
-| **NDVI** | `(NIR − Red) / (NIR + Red)` | Canopy density & greenness |
-| **EVI** | `2.5 × (NIR − Red) / (NIR + 6×Red − 7.5×Blue + 1)` | High-biomass canopy, reduced soil effects |
-| **CIre** | `(Band7 / Band5) − 1` | Chlorophyll content, flowering-stage discrimination |
+| **NDVI** | `(NIR - Red) / (NIR + Red)` | Canopy density & greenness |
+| **EVI** | `2.5 × (NIR - Red) / (NIR + 6×Red - 7.5×Blue + 1)` | High-biomass canopy, reduced soil effects |
+| **CIre** | `(Band7 / Band5) - 1` | Chlorophyll content, flowering-stage discrimination |
 
 ### CNN-LSTM Architecture
 
