@@ -270,33 +270,33 @@ opium-poppy-sentinel2-ml/
 - ≥ 16 GB RAM recommended for CNN-LSTM training
 - GPU optional but recommended for deep learning
 
-### Step 1 — Clone the Repository
+### Step 1 - Clone the Repository
 
 ```bash
 git clone https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml.git
 cd opium-poppy-sentinel2-ml
 ```
 
-### Step 2 — Create the Conda Environment (Recommended)
+### Step 2 - Create the Conda Environment (Recommended)
 
 ```bash
 conda env create -f environment.yml
 conda activate poppy-monitor
 ```
 
-### Step 3 — Alternative: pip install
+### Step 3 - Alternative: pip install
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4 — Authenticate Google Earth Engine
+### Step 4 - Authenticate Google Earth Engine
 
 ```bash
 earthengine authenticate
 ```
 
-### Step 5 — Verify Installation
+### Step 5 - Verify Installation
 
 ```bash
 python -c "import src; print('✅ All modules loaded successfully')"
