@@ -539,7 +539,7 @@ If you use this code or data in your research, please cite:
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 All code and trained models are freely available for academic and non-commercial use. For commercial licensing, please contact the author.
 
