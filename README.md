@@ -522,7 +522,7 @@ If you use this code or data in your research, please cite:
 <div align="center">
 
 **Fahad Hameed Khan**
-*Independant Researcher*
+*Independent Researcher*
  Karachi, Pakistan
 
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:drfahadhameedkhan@gmail.com)
