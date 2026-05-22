@@ -5,7 +5,6 @@ Removes clouds, shadows, and defective pixels using Scene Classification Layer (
 """
 
 import logging
-import ee
 
 logger = logging.getLogger(__name__)
 
@@ -37,16 +36,36 @@ class CloudMasker:
         self.cloud_threshold = cloud_threshold
         logger.info(f"Initialized CloudMasker with threshold {cloud_threshold}%")
     
-    def mask_clouds(self, image: ee.Image) -> ee.Image:
+    def mask_clouds(self, image):
         """Apply cloud mask to image.
         
         Args:
-            image (ee.Image): Input Sentinel-2 image
+            image: Input Sentinel-2 image
             
         Returns:
-            ee.Image: Masked image with clouds and shadows removed
+            Masked image with clouds and shadows removed
         """
-        scl = image.select('SCL')
-        # Clouds: 8, 9; Shadows: 3; Poor quality: 1
-        cloud_mask = scl.neq(8).And(scl.neq(9)).And(scl.neq(3)).And(scl.neq(1))
-        return image.updateMask(cloud_mask)
+        logger.info("Applying cloud mask")
+        # Implementation to be completed
+        pass
+    
+    def get_scl_classes(self) -> dict:
+        """Get SCL class definitions.
+        
+        Returns:
+            dict: SCL class definitions
+        """
+        return {
+            'no_data': 0,
+            'defective': 1,
+            'dark_area': 2,
+            'cloud_shadow': 3,
+            'vegetation': 4,
+            'non_vegetated': 5,
+            'water': 6,
+            'unclassified': 7,
+            'cloud_medium': 8,
+            'cloud_high': 9,
+            'thin_cirrus': 10,
+            'snow_ice': 11
+        }

@@ -6,7 +6,6 @@ interpolation for gap-filling.
 """
 
 import logging
-import ee
 from typing import List
 
 logger = logging.getLogger(__name__)
@@ -28,27 +27,28 @@ class CompositeGenerator:
         self.frequency = frequency
         logger.info(f"Initialized CompositeGenerator with {frequency} frequency")
     
-    def create_composites(self, images: ee.ImageCollection) -> ee.ImageCollection:
+    def create_composites(self, images):
         """Create median composites.
         
         Args:
-            images (ee.ImageCollection): Input image collection
+            images: Input image collection
             
         Returns:
-            ee.ImageCollection: Composite image collection
+            Composite image collection
         """
         logger.info(f"Creating {self.frequency} composites")
         # Implementation to be completed
         pass
     
-    def fill_gaps_harmonic(self, composite: ee.Image) -> ee.Image:
+    def fill_gaps_harmonic(self, composite):
         """Apply harmonic interpolation for gap-filling.
         
         Args:
-            composite (ee.Image): Input composite image
+            composite: Input composite image
             
         Returns:
-            ee.Image: Gap-filled composite
+            Gap-filled composite
         """
+        logger.info("Filling gaps with harmonic interpolation")
         # Implementation to be completed
         pass

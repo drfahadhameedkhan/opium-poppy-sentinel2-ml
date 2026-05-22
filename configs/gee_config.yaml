@@ -1,0 +1,59 @@
+# Google Earth Engine Configuration
+# ====================================
+
+# Region of Interest (Study Area)
+study_area:
+  afghanistan:
+    provinces:
+      - Helmand
+      - Kandahar
+      - Nangarhar
+      - Uruzgan
+      - Badakhshan
+    bbox: [60.8, 29.2, 72.3, 38.5]  # [minlon, minlat, maxlon, maxlat]
+
+  pakistan:
+    provinces:
+      - KPK
+      - Balochistan
+    bbox: [60.5, 23.6, 77.2, 36.9]
+
+# Sentinel-2 Parameters
+sentinel2:
+  collection: "COPERNICUS/S2_SR_HARMONIZED"
+  bands:
+    - "B2"   # Blue (490 nm)
+    - "B3"   # Green (560 nm)
+    - "B4"   # Red (665 nm)
+    - "B5"   # Red Edge (740 nm)
+    - "B6"   # Red Edge (783 nm)
+    - "B7"   # Red Edge (865 nm)
+    - "B8"   # NIR (842 nm)
+    - "B11"  # SWIR (1610 nm)
+    - "B12"  # SWIR (2190 nm)
+    - "SCL"  # Scene Classification Layer
+  
+  resolution: 10  # meters
+  cloud_threshold: 20  # percent
+
+# Temporal Parameters
+temporal:
+  season1:
+    start_date: "2022-10-01"
+    end_date: "2023-05-31"
+    name: "Season 1"
+  season2:
+    start_date: "2023-10-01"
+    end_date: "2024-05-31"
+    name: "Season 2"
+  season3:
+    start_date: "2024-10-01"
+    end_date: "2025-05-31"
+    name: "Season 3"
+
+# Output Parameters
+output:
+  format: "GeoTIFF"
+  compression: "DEFLATE"
+  crs: "EPSG:4326"  # WGS84
+  scale: 10  # meters
