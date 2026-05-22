@@ -556,9 +556,9 @@ All code and trained models are freely available for academic and non-commercial
 
 <div align="center">
 
-*"Satellite monitoring systems performing at bi-weekly temporal resolution can detect cultivation expansion as it occurs — enabling more timely policy response than annual ground survey programmes."*
+*"Satellite monitoring systems performing at bi-weekly temporal resolution can detect cultivation expansion as it occurs - enabling more timely policy response than annual ground survey programmes."*
 
-**— Khan (2025)**
+**- Khan (2025)**
 
 ---
 
