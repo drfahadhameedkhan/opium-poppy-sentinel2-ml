@@ -1,0 +1,58 @@
+# Data & Models
+data/processed/
+data/features/
+data/reference/
+results/models/*.h5
+results/models/*.pkl
+results/models/*.onnx
+*.pth
+*.pb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs & Outputs
+logs/
+*.log
+.wandb/
+
+# GEE Authentication
+~/.earthengine/
+earthengine_credentials.json
