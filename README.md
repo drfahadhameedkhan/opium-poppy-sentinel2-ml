@@ -8,7 +8,7 @@
 [![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://earthengine.google.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.xxxx%2Fland.2025.xxxxx-blue?style=for-the-badge)](https://doi.org)
-[![Acceptance Awaited from Journal](https://img.shields.io/badge/Journal-Land%20(MDPI)-orange?style=for-the-badge)](https://www.mdpi.com/journal/land)
+[![Acceptance Awaited from Journal](https://img.shields.io/badge/Journal-xxxx%20(xxxx)-orange?style=for-the-badge)](https://www.abcdef.com/journal/)
 
 [![Stars](https://img.shields.io/github/stars/fahadhameedkhan/opium-poppy-sentinel2-ml?style=social)](https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml/stargazers)
 [![Forks](https://img.shields.io/github/forks/fahadhameedkhan/opium-poppy-sentinel2-ml?style=social)](https://github.com/fahadhameedkhan/opium-poppy-sentinel2-ml/network)
