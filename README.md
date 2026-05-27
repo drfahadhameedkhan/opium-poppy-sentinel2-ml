@@ -57,7 +57,7 @@ This repository contains the **complete open-source implementation** of a geospa
 
 The study develops and rigorously validates three supervised classification architectures: **Random Forest (RF)**, **XGBoost** and a hybrid **Convolutional Neural Network–Long Short-Term Memory (CNN-LSTM)**, for cultivation area estimation across **680,000 km²** spanning major producer provinces in **Afghanistan and Pakistan** over three consecutive cultivation seasons (2022–2025).
 
-> **Manuscript submitted for acceptance to:** *Land* (MDPI)
+> **Manuscript submitted for acceptance to:** *1234* (abcd)
 
 ### ✨ What Makes This Framework Different?
 
