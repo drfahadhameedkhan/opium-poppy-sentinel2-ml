@@ -511,7 +511,7 @@ If you use this code or data in your research, please cite:
   pages     = {XXXX},
   doi       = {10.3390/.XXXXXXXX},
   issn      = {2073-445X},
-  url       = {https://www.mdpi.com/journal/land}
+  url       = {https://www.____.com/journal/____}
 }
 ```
 
